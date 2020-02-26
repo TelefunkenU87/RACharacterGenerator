@@ -6,7 +6,14 @@ namespace RACharacterGenerator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Character character = new Character();
+
+            Console.WriteLine($"Age is: {character.Age}");
+            Console.WriteLine($"Age is: {character.Age}");
+            Console.WriteLine($"Sex is: {character.Sex}");
+            Console.WriteLine($"Sex is: {character.Sex}");
+            Console.WriteLine($"Complexion is: {character.Complexion}");
+            Console.WriteLine($"Complexion is: {character.Complexion}");
         }
     }
 }
