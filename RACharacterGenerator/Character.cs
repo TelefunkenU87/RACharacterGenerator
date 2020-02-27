@@ -27,6 +27,11 @@ namespace RACharacterGenerator
             DistinctiveTrait = GenDistinctTrait();
             HistQ0();
             HistQ1();
+            HistQ2();
+            HistQ3();
+            HistQ4();
+            HistQ5();
+            HistQ6();
         }
         int GenAge()
         {
@@ -168,6 +173,246 @@ namespace RACharacterGenerator
                 case 9:
                     HistoryQs[1, 1] = "On the stage, performing every night.";
                     IncreaseSkills(10, 2);
+                    break;
+            }
+            return;
+        }
+        void HistQ2()
+        {
+            HistoryQs[2, 0] = "What were the people you called family like?";
+            switch (dice.Next(100) / 10)
+            {
+                case 0:
+                    HistoryQs[2, 1] = "Businessmen hunting after money.";
+                    IncreaseSkills(0, 8);
+                    break;
+                case 1:
+                    HistoryQs[2, 1] = "Pious folks, always praying.";
+                    IncreaseSkills(19, 8);
+                    break;
+                case 2:
+                    HistoryQs[2, 1] = "Cops chasing down criminals.";
+                    IncreaseSkills(7, 17);
+                    break;
+                case 3:
+                    HistoryQs[2, 1] = "Labourers tinkering and building all day.";
+                    IncreaseSkills(5, 6);
+                    break;
+                case 4:
+                    HistoryQs[2, 1] = "Smart people, their noses in books.";
+                    IncreaseSkills(16, 11);
+                    break;
+                case 5:
+                    HistoryQs[2, 1] = "Note takers and bookkeepers.";
+                    IncreaseSkills(15, 3);
+                    break;
+                case 6:
+                    HistoryQs[2, 1] = "Drifters, never putting down roots.";
+                    IncreaseSkills(13, 2);
+                    break;
+                case 7:
+                    HistoryQs[2, 1] = "Artists, who created beautiful things.";
+                    IncreaseSkills(14, 12);
+                    break;
+                case 8:
+                    HistoryQs[2, 1] = "Soldiers fighting one war after the other.";
+                    IncreaseSkills(4, 9);
+                    break;
+                case 9:
+                    HistoryQs[2, 1] = "Thieves and criminals.";
+                    IncreaseSkills(1, 10);
+                    break;
+            }
+            return;
+        }
+        void HistQ3()
+        {
+            HistoryQs[3, 0] = "How did you respond to religion?";
+            switch (dice.Next(100) / 10)
+            {
+                case 0:
+                    HistoryQs[3, 1] = "Fanatical";
+                    IncreaseSkills(2, 4);
+                    break;
+                case 1:
+                    HistoryQs[3, 1] = "Zealous";
+                    IncreaseSkills(0, 7);
+                    break;
+                case 2:
+                    HistoryQs[3, 1] = "Devout";
+                    IncreaseSkills(9, 17);
+                    break;
+                case 3:
+                    HistoryQs[3, 1] = "Sincere";
+                    IncreaseSkills(11, 19);
+                    break;
+                case 4:
+                    HistoryQs[3, 1] = "Tolerant";
+                    IncreaseSkills(15, 5);
+                    break;
+                case 5:
+                    HistoryQs[3, 1] = "Indifferent";
+                    IncreaseSkills(6, 14);
+                    break;
+                case 6:
+                    HistoryQs[3, 1] = "Apathetic";
+                    IncreaseSkills(18, 8);
+                    break;
+                case 7:
+                    HistoryQs[3, 1] = "Agnostic";
+                    IncreaseSkills(16, 3);
+                    break;
+                case 8:
+                    HistoryQs[3, 1] = "Atheistic";
+                    IncreaseSkills(10, 13);
+                    break;
+                case 9:
+                    HistoryQs[3, 1] = "Defiantly";
+                    IncreaseSkills(12, 1);
+                    break;
+            }
+            return;
+        }
+        void HistQ4()
+        {
+            HistoryQs[4, 0] = "How strict was your upbringing?";
+            switch (dice.Next(100) / 10)
+            {
+                case 0:
+                    HistoryQs[4, 1] = "Draconian";
+                    IncreaseSkills(2, 7);
+                    break;
+                case 1:
+                    HistoryQs[4, 1] = "Brutal";
+                    IncreaseSkills(9, 13);
+                    break;
+                case 2:
+                    HistoryQs[4, 1] = "Heavy-handed";
+                    IncreaseSkills(0, 19);
+                    break;
+                case 3:
+                    HistoryQs[4, 1] = "Strict";
+                    IncreaseSkills(5, 4);
+                    break;
+                case 4:
+                    HistoryQs[4, 1] = "Tolerant";
+                    IncreaseSkills(16, 6);
+                    break;
+                case 5:
+                    HistoryQs[4, 1] = "Indifferent";
+                    IncreaseSkills(12, 11);
+                    break;
+                case 6:
+                    HistoryQs[4, 1] = "Easy-going";
+                    IncreaseSkills(3, 14);
+                    break;
+                case 7:
+                    HistoryQs[4, 1] = "Lenient";
+                    IncreaseSkills(1, 8);
+                    break;
+                case 8:
+                    HistoryQs[4, 1] = "Pampered";
+                    IncreaseSkills(17, 10);
+                    break;
+                case 9:
+                    HistoryQs[4, 1] = "Spoilt";
+                    IncreaseSkills(15, 18);
+                    break;
+            }
+            return;
+        }
+        void HistQ5()
+        {
+            HistoryQs[5, 0] = "Who had the biggest influence on your childhood?";
+            switch (dice.Next(100) / 10)
+            {
+                case 0:
+                    HistoryQs[5, 1] = "My bully.";
+                    IncreaseSkills(3, 8);
+                    break;
+                case 1:
+                    HistoryQs[5, 1] = "My sibling.";
+                    IncreaseSkills(0, 15);
+                    break;
+                case 2:
+                    HistoryQs[5, 1] = "My best friend.";
+                    IncreaseSkills(1, 11);
+                    break;
+                case 3:
+                    HistoryQs[5, 1] = "A religious leader.";
+                    IncreaseSkills(2, 19);
+                    break;
+                case 4:
+                    HistoryQs[5, 1] = "A hero from legends.";
+                    IncreaseSkills(6, 17);
+                    break;
+                case 5:
+                    HistoryQs[5, 1] = "My teacher and mentor.";
+                    IncreaseSkills(9, 16);
+                    break;
+                case 6:
+                    HistoryQs[5, 1] = "Myself.";
+                    IncreaseSkills(10, 14);
+                    break;
+                case 7:
+                    HistoryQs[5, 1] = "A heroic soldier.";
+                    IncreaseSkills(4, 7);
+                    break;
+                case 8:
+                    HistoryQs[5, 1] = "A kind old (wo)manthat helped me.";
+                    IncreaseSkills(13, 12);
+                    break;
+                case 9:
+                    HistoryQs[5, 1] = "My parents.";
+                    IncreaseSkills(5, 18);
+                    break;
+            }
+            return;
+        }
+        void HistQ6()
+        {
+            HistoryQs[6, 0] = "Your childhood left you feeling..?";
+            switch (dice.Next(100) / 10)
+            {
+                case 0:
+                    HistoryQs[6, 1] = "Afraid";
+                    IncreaseSkills(0, 8);
+                    break;
+                case 1:
+                    HistoryQs[6, 1] = "Peaceful";
+                    IncreaseSkills(1, 16);
+                    break;
+                case 2:
+                    HistoryQs[6, 1] = "Happy";
+                    IncreaseSkills(12, 9);
+                    break;
+                case 3:
+                    HistoryQs[6, 1] = "Cynical";
+                    IncreaseSkills(11, 15);
+                    break;
+                case 4:
+                    HistoryQs[6, 1] = "Proud";
+                    IncreaseSkills(6, 3);
+                    break;
+                case 5:
+                    HistoryQs[6, 1] = "Sad";
+                    IncreaseSkills(2, 14);
+                    break;
+                case 6:
+                    HistoryQs[6, 1] = "Ashamed";
+                    IncreaseSkills(10, 5);
+                    break;
+                case 7:
+                    HistoryQs[6, 1] = "Confused";
+                    IncreaseSkills(4, 17);
+                    break;
+                case 8:
+                    HistoryQs[6, 1] = "Angry";
+                    IncreaseSkills(13, 19);
+                    break;
+                case 9:
+                    HistoryQs[6, 1] = "Indifferent";
+                    IncreaseSkills(7, 18);
                     break;
             }
             return;
